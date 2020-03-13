@@ -32,7 +32,7 @@ Esquema onda
 
 Con esto podemos hacer dos cosas, detectar un obstáculo esperando simplemente que Arduino reciba un "Echo" o contar el tiempo que transcurre desde que se manda el pulso por el trigger hasta que se recibe, de esta forma, y conociendo cual es la velocidad del sonido, podemos determinar de forma muy sencilla la distancia exacta a la que se encuentra el objeto en el que esta rebotando la señal.
 
-Para aclarar un poco el factor de multiplicación que vamos a introducir en Arduino, basta con decir que la velocidad es igual al espacio dividido por el tiempo que se tarda en recorrer dicho espacio. La velocidad del sonido es conocida (343m/s) y el tiempo lo vamos a determinar, como el tiempo que transcurre desde que efectuamos el disparo hasta que recibimos el eco.
+Para aclarar un poco el factor de multiplicación que vamos a introducir en Arduino, basta con decir que la velocidad es igual al espacio dividido por el tiempo que se tarda en recorrer dicho espacio. La velocidad del sonido es conocida (343,2 m/s) y el tiempo lo vamos a determinar, como el tiempo que transcurre desde que efectuamos el disparo hasta que recibimos el eco.
 
 ---
 Tener en cuenta que este tiempo será doble, ya que la onda hace el camino de ida y el de regreso.
@@ -40,3 +40,17 @@ Tener en cuenta que este tiempo será doble, ya que la onda hace el camino de id
 ---
 
 Aquí tenéis un pequeño resumen del cálculo que hay que hacer:
+
+                          espacio
+velocidad (del sonido) = ---------
+                          tiempo
+
+velocidad del sonido en el aire = 343,2 m/s = 0,03432 cm/µs
+
+espacio = velocidad * tiempo = 0,03432 * tiempo
+
+Pero como la onda ha recorrido el camino dos veces (ida y vuelta) hay quye dividir entre dos para conocer la distancia a la que se encuentra el objeto. Además, si hacemos la inversa de esa velocidad nos da un valor que que facilita los cálculos en programación.
+
+
+
+
