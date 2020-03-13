@@ -1,3 +1,4 @@
+![LOGO](https://github.com/makersclubpp/MC_module_hc-sr04/blob/master/img/LOGO_makers_64x64.jpg)
 # Makers Club
 ## Módulo HC-SR04
 
@@ -11,6 +12,7 @@ Este sensor consta de 4 pines, alimentación (Vcc), un disparador (Trig), el rec
 
 Las características básicas de este sensor y que se deben de tener en cuenta al trabajar con él son:
 
+| Característica        | Valor           |
 | --------------------- | --------------: |
 | Alimentación          | +5V DC          |
 | Frecuencia de trabajo | 40kHz           |
