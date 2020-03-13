@@ -11,6 +11,7 @@ Este sensor consta de 4 pines, alimentación (Vcc), un disparador (Trig), el rec
 
 Las características básicas de este sensor y que se deben de tener en cuenta al trabajar con él son:
 
+| --------------------- | --------------: |
 | Alimentación          | +5V DC          |
 | Frecuencia de trabajo | 40kHz           |
 | Consumo (Stand-By)    | <2mA            |
