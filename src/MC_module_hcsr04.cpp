@@ -10,7 +10,7 @@
 
 HCSR04::HCSR04(int triggerPin, int echoPin)
 {
-    HCSR04(triggerPin, echoPin, timeOut);
+    HCSR04(triggerPin, echoPin, this->timeOut);
 }
 
 HCSR04::HCSR04(int triggerPin, int echoPin, long timeOut)
