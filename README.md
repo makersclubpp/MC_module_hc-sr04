@@ -36,6 +36,7 @@ Para aclarar un poco el factor de multiplicación que vamos a introducir en Ardu
 
 ---
 Tener en cuenta que este tiempo será doble, ya que la onda hace el camino de ida y el de regreso.
+
 ---
 
 Aquí tenéis un pequeño resumen del cálculo que hay que hacer:
