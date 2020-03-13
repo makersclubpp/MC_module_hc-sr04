@@ -1,5 +1,4 @@
-![LOGO](https://github.com/makersclubpp/MC_module_hc-sr04/blob/master/img/LOGO_makers_64x64.png)
-# Makers Club
+![LOGO](https://github.com/makersclubpp/MC_module_hc-sr04/blob/master/img/LOGO_makers_64x64.png) # Makers Club
 ## Módulo HC-SR04
 
 
