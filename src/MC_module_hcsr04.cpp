@@ -21,21 +21,28 @@ HCSR04::HCSR04(int triggerPin, int echoPin, long timeOut)
 
     pinMode(this->triggerPin, OUTPUT);
     pinMode(this->echoPin, INPUT);
+
+    digitalWrite(this->triggerPin, LOW);
+
+    this->timeElapsed = millis();
+    this->duration = millis();
 }
 
 long HCSR04::pulseDuration()
 {
-    digitalWrite(this->triggerPin, LOW);
-    delayMicroseconds(2);
-    digitalWrite(this->triggerPin, HIGH);
-    delayMicroseconds(10);
-    digitalWrite(this->triggerPin, LOW);
-
-    long duration = pulseIn(this->echoPin, HIGH, this->timeOut);
-
-    if (duration == 0)
+    if ((millis() - this->earlierTime) > this->timeElapsed)
     {
-        duration = timeOut;
+
+        digitalWrite(this->triggerPin, HIGH);
+        delayMicroseconds(this->triggerTime);
+        digitalWrite(this->triggerPin, LOW);
+
+        unsigned long newDuration = pulseIn(this->echoPin, HIGH, this->timeOut);
+
+        if (newDuration != 0)
+        {
+            duration = newDuration;
+        }
     }
 
     return duration;
@@ -51,11 +58,11 @@ float HCSR04::distance(boolean system)
     if (system)
     {
         // CM
-        return pulseDuration() / 58.2;
+        return pulseDuration() / 58.2751;
     }
     else
     {
         // INCH
-        return pulseDuration() / 148;
+        return pulseDuration() / 148.0187;
     }
 }

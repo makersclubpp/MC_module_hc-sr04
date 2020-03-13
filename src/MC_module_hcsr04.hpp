@@ -33,7 +33,12 @@ public:
 private:
   int triggerPin;
   int echoPin;
+
   long timeOut = 3000;
+  unsigned long timeElapsed = 50;
+  unsigned long triggerTime = 10;
+  unsigned long earlierTime = 0;
+  unsigned long duration = 0;
 };
 
 #endif
