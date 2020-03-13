@@ -1,11 +1,11 @@
 # ![LOGO](https://github.com/makersclubpp/MC_module_hc-sr04/blob/master/img/LOGO_makers_64x64.png) Makers Club
-## Módulo HC-SR04
+## Módulo sensor ultrasonico HC-SR04
 
 
 ### Descripción
 Lo más singular del sensor de ultrasonidos HC-SR04 es quizás su "par de ojos", estos no son más que un emisor y un receptor de ultrasonidos que trabajan a una frecuencia de 40KHz (una frecuencia inaudible para las personas).
 
-![Ultrasonidos HC-SR04](https://github.com/makersclubpp/MC_module_hc-sr04/blob/master/img/HCSR04.jpg)
+![Sensor ultrasónico HC-SR04](https://github.com/makersclubpp/MC_module_hc-sr04/blob/master/img/HCSR04.jpg)
 
 Este sensor consta de 4 pines, alimentación (Vcc), un disparador (Trig), el receptor (Echo) y masa (GND). Para el correcto funcionamiento del sensor es necesario el conectar estos 4 pines.
 

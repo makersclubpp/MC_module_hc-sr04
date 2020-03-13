@@ -8,29 +8,30 @@
 #include "Arduino.h"
 #include "MC_module_hcsr04.hpp"
 
-HCSR04::HCSR04(int tp, int ep)
+HCSR04::HCSR04(int triggerPin, int echoPin)
 {
-    HCSR04(tp, ep, timeOut);
+    HCSR04(triggerPin, echoPin, timeOut);
 }
 
-HCSR04::HCSR04(int tp, int ep, long to)
+HCSR04::HCSR04(int triggerPin, int echoPin, long timeOut)
 {
-    pinMode(tp, OUTPUT);
-    pinMode(ep, INPUT);
-    triggerPin = tp;
-    echoPin = ep;
-    timeOut = to;
+    this->triggerPin = triggerPin;
+    this->echoPin = echoPin;
+    this->timeOut = timeOut;
+
+    pinMode(this->triggerPin, OUTPUT);
+    pinMode(this->echoPin, INPUT);
 }
 
 long HCSR04::pulseDuration()
 {
-    digitalWrite(triggerPin, LOW);
+    digitalWrite(this->triggerPin, LOW);
     delayMicroseconds(2);
-    digitalWrite(triggerPin, HIGH);
+    digitalWrite(this->triggerPin, HIGH);
     delayMicroseconds(10);
-    digitalWrite(triggerPin, LOW);
+    digitalWrite(this->triggerPin, LOW);
 
-    long duration = pulseIn(echoPin, HIGH, timeOut);
+    long duration = pulseIn(this->echoPin, HIGH, this->timeOut);
 
     if (duration == 0)
     {
