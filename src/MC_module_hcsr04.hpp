@@ -24,8 +24,8 @@
 class HCSR04
 {
 public:
-  HCSR04(int tp, int ep);
-  HCSR04(int tp, int ep, long to);
+  HCSR04(int triggerPin, int echoPin);
+  HCSR04(int triggerPin, int echoPin, long timeOut);
   long pulseDuration();
   float distance();
   float distance(boolean system);
@@ -34,7 +34,6 @@ private:
   int triggerPin;
   int echoPin;
   long timeOut = 3000;
-  long distanceCM, distanceINCH;
 };
 
 #endif
