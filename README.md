@@ -40,10 +40,8 @@ Tener en cuenta que este tiempo será doble, ya que la onda hace el camino de id
 ---
 
 Aquí tenéis un pequeño resumen del cálculo que hay que hacer:
-
-                          espacio
-velocidad (del sonido) = ---------
-                          tiempo
+                 
+velocidad (del sonido) = espacio / tiempo
 
 velocidad del sonido en el aire = 343,2 m/s = 0,03432 cm/µs
 
