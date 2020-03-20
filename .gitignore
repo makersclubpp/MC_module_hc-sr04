@@ -1,7 +1,7 @@
-.pio
-.vscode
-.vscode/*
+/.pio
+/.vscode
+/.vscode/*
 .gitignore
 .travis.yml
 platformio.ini
-src/main.cpp
+/src/main.cpp
