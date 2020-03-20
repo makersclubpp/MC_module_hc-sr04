@@ -50,5 +50,26 @@ espacio = velocidad * tiempo = 0,03432 * tiempo
 Pero como la onda ha recorrido el camino dos veces (ida y vuelta) hay quye dividir entre dos para conocer la distancia a la que se encuentra el objeto. Además, si hacemos la inversa de esa velocidad nos da un valor que que facilita los cálculos en programación.
 
 
+### Ejemplo de uso
+#### Conexiones
 
+![Sensor ultrasónico HC-SR04](https://github.com/makersclubpp/MC_module_hc-sr04/blob/master/schema/HC-SR04.svg)
 
+#### Código
+
+```Arduino
+#include <mc_module_hcsr04.hpp>
+
+MC_M_HCSR04 ultrasonido(3, 2);
+
+void setup() {
+  Serial.begin(9600); 
+}
+
+void loop()
+{
+  Serial.print(ultrasonic.distance());
+  Serial.println(" cm" );
+  delay(100);
+}
+```

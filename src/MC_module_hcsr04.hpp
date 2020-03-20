@@ -13,19 +13,19 @@
  * 
  */
 
-#ifndef mc_module_hcsr04.h
-#define mc_module_hcsr04 .h
+#ifndef mc_module_hcsr04.hpp
+#define mc_module_hcsr04.hpp
 
 #include "Arduino.h"
 
 #define CM true
 #define INCH false
 
-class HCSR04
+class MC_M_HCSR04
 {
 public:
-  HCSR04(int triggerPin, int echoPin);
-  HCSR04(int triggerPin, int echoPin, long timeOut);
+  MC_M_HCSR04(int triggerPin, int echoPin);
+  MC_M_HCSR04(int triggerPin, int echoPin, long timeOut);
   long pulseDuration();
   float distance();
   float distance(boolean system);

@@ -1,19 +1,19 @@
 /**
  * 
- * \file MC_module_hcsr04.c
+ * \file MC_module_HCSR04.c
  * \brief
  *  
  */
 
 #include "Arduino.h"
-#include "MC_module_hcsr04.hpp"
+#include "mc_module_hcsr04.hpp"
 
-HCSR04::HCSR04(int triggerPin, int echoPin)
+MC_M_HCSR04::MC_M_HCSR04(int triggerPin, int echoPin)
 {
-    HCSR04(triggerPin, echoPin, this->timeOut);
+    MC_M_HCSR04(triggerPin, echoPin, this->timeOut);
 }
 
-HCSR04::HCSR04(int triggerPin, int echoPin, long timeOut)
+MC_M_HCSR04::MC_M_HCSR04(int triggerPin, int echoPin, long timeOut)
 {
     this->triggerPin = triggerPin;
     this->echoPin = echoPin;
@@ -28,7 +28,7 @@ HCSR04::HCSR04(int triggerPin, int echoPin, long timeOut)
     this->duration = millis();
 }
 
-long HCSR04::pulseDuration()
+long MC_M_HCSR04::pulseDuration()
 {
     if ((millis() - this->earlierTime) > this->timeElapsed)
     {
@@ -48,12 +48,12 @@ long HCSR04::pulseDuration()
     return duration;
 }
 
-float HCSR04::distance()
+float MC_M_HCSR04::distance()
 {
     return distance(true);
 }
 
-float HCSR04::distance(boolean system)
+float MC_M_HCSR04::distance(boolean system)
 {
     if (system)
     {
