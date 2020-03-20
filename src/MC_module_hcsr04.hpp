@@ -26,9 +26,9 @@ class MC_M_HCSR04
 public:
   MC_M_HCSR04(int triggerPin, int echoPin);
   MC_M_HCSR04(int triggerPin, int echoPin, long timeOut);
-  long pulseDuration();
-  float distance();
-  float distance(boolean system);
+  long getPulseDuration();
+  float getDistance();
+  float getDistance(boolean system);
 
 private:
   int triggerPin;

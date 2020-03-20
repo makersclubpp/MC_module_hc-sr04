@@ -28,7 +28,7 @@ MC_M_HCSR04::MC_M_HCSR04(int triggerPin, int echoPin, long timeOut)
     this->duration = millis();
 }
 
-long MC_M_HCSR04::pulseDuration()
+long MC_M_HCSR04::getPulseDuration()
 {
     if ((millis() - this->earlierTime) > this->timeElapsed)
     {
@@ -48,21 +48,21 @@ long MC_M_HCSR04::pulseDuration()
     return duration;
 }
 
-float MC_M_HCSR04::distance()
+float MC_M_HCSR04::getDistance()
 {
-    return distance(true);
+    return getDistance(true);
 }
 
-float MC_M_HCSR04::distance(boolean system)
+float MC_M_HCSR04::getDistance(boolean system)
 {
     if (system)
     {
         // CM
-        return pulseDuration() / 58.2751;
+        return getPulseDuration() / 58.2751;
     }
     else
     {
         // INCH
-        return pulseDuration() / 148.0187;
+        return getPulseDuration() / 148.0187;
     }
 }

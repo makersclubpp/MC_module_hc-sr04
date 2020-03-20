@@ -58,7 +58,7 @@ Pero como la onda ha recorrido el camino dos veces (ida y vuelta) hay quye divid
 #### Código
 
 ```Arduino
-#include <mc_module_hcsr04.hpp>
+#include "mc_module_hcsr04.hpp"
 
 MC_M_HCSR04 ultrasonido(3, 2);
 
@@ -68,7 +68,7 @@ void setup() {
 
 void loop()
 {
-  Serial.print(ultrasonic.distance());
+  Serial.print(ultrasonido.getDistance());
   Serial.println(" cm" );
   delay(100);
 }
