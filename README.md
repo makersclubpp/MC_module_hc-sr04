@@ -55,7 +55,7 @@ Pero como la onda ha recorrido el camino dos veces (ida y vuelta) hay quye divid
 ### Ejemplo de uso
 #### Conexiones
 
-![Sensor ultrasónico HC-SR04](https://github.com/makersclubpp/MC_module_hc-sr04/blob/master/schema/HC-SR04.svg)
+![Sensor ultrasónico HC-SR04](https://github.com/makersclubpp/MC_module_hc-sr04/blob/master/img/HCSR04.svg)
 
 #### Código
 
