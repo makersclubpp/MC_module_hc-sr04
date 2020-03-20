@@ -13,8 +13,8 @@
  * 
  */
 
-#ifndef mc_module_hcsr04.hpp
-#define mc_module_hcsr04.hpp
+#ifndef mc_module_hcsr04_hpp
+#define mc_module_hcsr04_hpp
 
 #include "Arduino.h"
 
