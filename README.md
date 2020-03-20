@@ -1,4 +1,6 @@
-# ![LOGO](https://github.com/makersclubpp/MC_module_hc-sr04/blob/master/img/LOGO_makers_64x64.png) Makers Club
+![Volver](https://github.com/makersclubpp/MC_Indice/blob/master/img/BackIcon.png) [Volver](https://github.com/makersclubpp/MC_Indice)
+
+# ![LOGO](https://github.com/makersclubpp/MC_Indice/blob/master/img/LOGO_makers_64x64.png) Makers Club ![LOGO](https://github.com/makersclubpp/MC_Indice/blob/master/img/LOGO_makers_64x64.png)
 ## Módulo sensor ultrasonico HC-SR04
 
 
@@ -12,7 +14,7 @@ Este sensor consta de 4 pines, alimentación (Vcc), un disparador (Trig), el rec
 Las características básicas de este sensor y que se deben de tener en cuenta al trabajar con él son:
 
 | Característica        | Valor           |
-| --------------------- | --------------: |
+| --- | :---: |
 | Alimentación          | +5V DC          |
 | Frecuencia de trabajo | 40kHz           |
 | Consumo (Stand-By)    | <2mA            |
