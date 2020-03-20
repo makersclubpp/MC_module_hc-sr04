@@ -16,7 +16,7 @@
 #ifndef mc_module_hcsr04_hpp
 #define mc_module_hcsr04_hpp
 
-#include "Arduino.h"
+#include <Arduino.h>
 
 #define CM true
 #define INCH false
